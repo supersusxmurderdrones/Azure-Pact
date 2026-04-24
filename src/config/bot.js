@@ -26,8 +26,8 @@ export const botConfig = {
       {
         // Text users will see (example: "Playing /help | Titan Bot").
         name: "Super Sus (Supersus_X_Murderdrones Community)",
-        // Activity type number (4 = Fandom).
-        type: 4, 
+        // Activity type number (0 = Playing).
+        type: 0, 
       },
     ],
   },
@@ -63,9 +63,9 @@ export const botConfig = {
 
     // Embed colors by application status.
     statusColors: {
-      pending: "#FFA500",
-      approved: "#00FF00",
-      denied: "#FF0000",
+      pending: "#F7F700",
+      approved: "#00C8FF",
+      denied: "#640096",
     },
 
     // How long users must wait before submitting another application (hours).
