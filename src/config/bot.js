@@ -282,8 +282,6 @@ export const botConfig = {
     
     // Timezone used to calculate birthday dates.
     timezone: "UTC",
-
-    message: :)
     
   },
 
