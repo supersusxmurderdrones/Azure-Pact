@@ -35,3 +35,16 @@ export const botConfig = {
   // =========================
   // COMMAND BEHAVIOR
   // =========================
+const { EmbedBuilder } = require('discord.js');
+
+client.on('guildMemberAdd', member => {
+    const channel = member.guild.channels.cache.get('<#1494602033095770214>');
+
+    const embed = new EmbedBuilder()
+        .setColor('#00c8ff')
+        .setTitle('**Welcome**')
+         .setDescription(`Welcome to Supersus_X_Murderdrones Community! Ready to roll ${member}?`)
+        .setThumbnail(member.user.displayAvatarURL());
+
+    channel.send({ embeds: [embed] });
+});
